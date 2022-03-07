@@ -19,12 +19,24 @@ a {
     font-size: 12px;   
 }
 .container-fluid {
-    padding-top: 145px;
-    margin-bottom: 40px; 
+    width:100%;
+    max-width:100%;
+    padding: 145px 45px 0 45px;
+    margin: 0 auto 40px auto;
 }
-
-.name {
-    font-size: 30px;
+.logo {
+    width:fit-content;
+    margin: 0 auto 0 auto;
+}
+.link {
+    margin: 0 auto 0 auto;
+    width:fit-content;
+}
+.link .picture img {
+    width:100px;
+}
+.link .name {
+    font-size: 50px;
 }
 .section-content {
     width:100%;
