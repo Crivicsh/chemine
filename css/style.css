@@ -1,0 +1,90 @@
+html {
+    line-height: 1.45;
+}
+body {
+    text-align: center;
+    font-family: "Exo 2",Tahoma,sans-serif;
+}
+a {
+    color: black;
+}
+.main {
+    min-height: 100vh;
+    background: repeat 0/100% url("./background.png");   
+}
+.temporary_bug_warning {
+    width:100%;
+    padding:  3px;
+    background-color: gray;
+    font-size: 12px;   
+}
+.container-fluid {
+    padding-top: 145px;
+    margin-bottom: 40px; 
+}
+
+.name {
+    font-size: 30px;
+}
+.section-content {
+    width:100%;
+    max-width:100%;
+    padding: 0 45px;
+}
+form#form-equation {
+    box-sizing: border-box;
+    width: 100%;
+    max-width:650px;
+    margin: 40px auto 40px auto;
+    border: 2px solid #7140DC;
+    border-radius: 15px;
+    padding: 0;
+    background: white;
+}
+.inputgroup {
+    margin: 0;
+    border:0;
+    padding: 0;
+    background: none;
+    display: flex;
+}
+.input {
+    width:100%;
+    border:0;
+    padding:  5px 10px;
+    background:none;
+    font-size: 20px;
+}
+.button-wrapper {
+    display: flex;
+    align-items: center;
+}
+.button-wrapper button {
+    width: 25px;
+    height: 25px;
+    margin-right:10px;
+    border-radius: 5px;
+    padding:0;
+    background: url("./лого.png") 0/100%;
+}
+.button-wrapper button span {
+    display: none;
+}
+.instruction-window {
+    box-sizing: border-box;
+    width:100%;
+    max-width:650px;
+    margin: 40px auto 40px auto;
+    border: 2px solid #7140DC;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background: white;
+    text-align:start; 
+    font-size: 20px;
+}
+.footer {
+    width:100%;
+    background-color: gray;
+    position:absolute;
+    bottom:0;
+}
