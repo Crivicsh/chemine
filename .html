@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-equation.css">
     <title id="title">Chemine</title>
 </head>
 <body class=''>  
@@ -30,13 +30,8 @@
                 </div>
             </a>
         </div>
-        </nav>
-	</header>
-    <!--header end-->
-    <!--section input + instructions-->
-	<section class="section-content container">
         <!--input window-->
-        <form id="form-equation" method="get" action="">
+        <form id="form-equation" method="get">
             <fieldset class="inputgroup">
                 <input class='input' type="text" name="s" value="" placeholder="Enter a reaction, e.g. &quot;hcl + naoh&quot;" autofocus="" class="ui-autocomplete-input" autocomplete="off">
                 <input type="hidden" name="ref" value="input">
@@ -49,21 +44,18 @@
                 </div>
             </fieldset>    
         </form>
-        <!--input window end-->
-        <!--instruction window-->
-        <div class="instruction-window">
-            Как использовать:<br>
-Введите реакцию, например, “H2O+H2SO4”<br>
-    Нажмите “Enter” или значок в поле ввода<br>
-    Нажмите “Пояснение” или прокрутите страницу вниз для пояснения химической реакции<br>
-    У самых популярных реакций в пояснениях можно найти видео-демонстрацию.<br>
-Этот проект создан энтузиастами, поэтому сайту нужна ваша поддержка  https://www.patreon.com/ru-RU<br>
-Авторы: @crivicsh @nebasov<br>
+        <!--input window end-->  
+        </nav>
+	</header>
+    <!--header end-->
+    <!--section equation + explanation-->
+	<section class="section-content container">
+        <div class="alert-alert">
+            <span>
+                Таких веществ не существует, или реакция между ними невозможна
+            </span>
+            <div class='alert-alert-picture'><img src="img/alert-alert-picture.png"></div>
         </div>
-        <!--instruction window end-->
-            <!--<object width = "320" height = "240" data = "https://www.youtube.com/embed/DYBUSuk2e8o">
-            </object>
-            <embed width = "320" height = "240" src = "https://www.youtube.com/embed/bmtm1T_wQyU">-->    
     </section>
     <!--section end-->
     <!--footer-->
@@ -76,6 +68,6 @@
     <!--scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index-equation.js"></script>
 </body>
 </html>
