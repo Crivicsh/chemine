@@ -10,7 +10,7 @@ a {
 }
 .main {
     min-height: 100vh;
-    background: repeat 0/100% url("./background.png");   
+    background: repeat left top 0/20% url("./background-white.png");  
 }
 .temporary_bug_warning {
     width:100%;
@@ -93,6 +93,10 @@ form#form-equation {
     background: white;
     text-align:start; 
     font-size: 20px;
+}
+.instruction-header {
+    font-size: inherit;
+    font-weight: inherit;
 }
 .footer {
     width:100%;

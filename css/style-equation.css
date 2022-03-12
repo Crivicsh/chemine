@@ -10,7 +10,7 @@ a {
 }
 .main {
     min-height: 100vh;
-    background: repeat 0/100% url("./background.png");   
+    background: repeat left top 0/20% url("./background-white.png");   
 }
 .temporary_bug_warning {
     width:100%;
@@ -95,6 +95,7 @@ form#form-equation {
     font-size: 20px;
 }
 .alert-alert {
+    box-sizing: border-box;
     width:100%;
     max-width:650px;
     margin: 40px auto 40px auto;
@@ -112,58 +113,90 @@ form#form-equation {
     max-width:400px;
 }
 .alert-alert-picture img {
+    width:100%;
+}
+.equation {
+    box-sizing: border-box;
+    width:100%;
+    margin: 40px auto 40px auto;
+    padding:0 0 0 0;
+}
+.equation-args {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.arrow {
+    margin: 20px auto 20px auto;
+    width:200px;
+}
+.arrow img {
     width:inherit;
-    border: 10px;
 }
-div#reactants {
-    width:100%;
-    height: fit-content;
+.equation-element {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction:column;
     justify-content: center;
+    margin: 20px 10px 20px 10px;
 }
-div#results {
-    width:100%;
-    height: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.equation .charge, .equation .oxidation-number, .equation .oxidation-number-data:before {
+    position: static;
+    font-size: 0.7em;
+    vertical-align: 0.8em;
+}
+.equation .oxidation-number-data:before {
+    content: attr(data-on);
+}
+.equation .oxidation-number, .equation .oxidation-number-data:before {
+    opacity: 1;
 }
 .compound {
-    width: fit-content;
-    height: fit-content;
-    margin: auto 20px auto 20px;
+    width: 150px;
+    font-family: 'PT Sans', sans-serif;
 }
-.compound .compound-name {
-    width:fit-content;
-    height: fit-content;
-    margin: 0 auto 20px auto;
+
+.compound-name {
+    height:100%;
+    width: inherit;
 }
-.compound .compound-name span{
-    font-size: 30px;
+.compound-name .compound {
+    font-size:30px;
+
 }
-.compound .compound-picture {
-    width: 200px;
-    height: 200px;
-    margin: 20px auto 0 auto
+.compound-picture {
+    width: inherit;
+    height:150px;
 }
-.compound .compound-picture img{
+.compound-picture img {
     width:inherit;
     height:inherit;
 }
-.plus img {
-    width: 100px;
-    
-}
-.arrow {
-    width:fit-content;
-    height:fit-content;
+.explanation-block {
+    box-sizing: border-box;
+    width:100%;
+    max-width:1000px;
     margin: 40px auto 40px auto;
+    border: 2px solid #7140DC;
+    border-radius: 15px;
+    box-shadow: 0 0 30px 1px;
+    padding: 5px 50px;
+    background: white;
+    text-align:start; 
+    font-size: 20px;    
 }
-.arrow img {
-    width:160px;
+.group {
+    font-family: 'PT Sans', sans-serif;
 }
-
+.space {
+    display: none;
+}
+.citations {
+    display:none;
+}
+.btn-link {
+    display: none;
+}
 .footer {
     width:100%;
     background-color: gray;

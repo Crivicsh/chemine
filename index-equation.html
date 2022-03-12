@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style-equation.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+ 
     <title id="title">Chemine - Chemical equations online!</title>
 </head>
 <body class=''>  
@@ -31,7 +37,7 @@
             </a>
         </div>
         <!--input window-->
-        <form id="form-equation" method="get" action="index-equation">
+        <form id="form-equation" method="get" action="index-equation.html">
             <fieldset class="inputgroup">
                 <input class='input' type="text" name="s" value="" placeholder="Enter a reaction, e.g. &quot;hcl + naoh&quot;" autofocus="" class="ui-autocomplete-input" autocomplete="off">
                 <input type="hidden" name="ref" value="input">
@@ -58,6 +64,209 @@
             <div class='alert-alert-picture'><img src="img/alert-alert-picture.png"></div>
         </div>
         -->
+        <!--equation
+        <div class="equation">
+            <div class="equation-args" id="reactants">
+                <div class="equation-element compound">
+                    <div class="compound-name">
+                        <span>6NaOH</span>    
+                    </div>
+                    <div class="compound-picture">
+                        <img src='img/compound_gas-pink.png'>
+                    </div>
+                </div>
+                <div class="equation-element plus">
+                    <img src="img/plus.png">
+                </div>
+
+            </div>
+            <div class="arrow">
+                <img src="img/result_arrow.png">
+            </div>
+            <div class="equation-args" id="results">
+
+            </div>
+        </div>
+        -->
+        <!--<div class="explanation">
+            <div class="explanation-block">
+                <div class="panel-body">
+                <p>
+                    This is an <strong>oxidation-reduction</strong> (redox) reaction:
+                </p>
+                <div class="redox-block">
+                    <div class="clear">
+
+                    </div>
+                    <p>
+                        <span class="equation oxidation-equation">
+                            <span class="compound">
+                                <span class="element">
+                                    Mn
+                                </span>
+                                <sup class="oxidation-number">
+                                    IV
+                                </sup>
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                            <span class="plus">
+                                +
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                            <span class="compound">
+                                <span class="coefficient">
+                                    2
+                                </span>
+                                <span class="space">
+                                    &nbsp;
+                                </span>
+                                <span class="electron">
+                                    e
+                                </span>
+                                <sup class="charge">
+                                    -
+                                </sup>
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                            <span class="arrow">
+                                →
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                            <span class="compound">
+                                <span class="element">
+                                    Mn
+                                </span>
+                                <sup class="oxidation-number">
+                                    II
+                                </sup>
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                        </span>
+                        <span class="redox-comment">
+                            (reduction)
+                        </span>
+                    </p>
+                    <div class="clear">
+
+                    </div>
+                    <p>
+                        <span class="equation oxidation-equation">
+                            <span class="compound">
+                                <span class="coefficient">
+                                    2
+                                </span>
+                                <span class="space">
+                                    &nbsp;
+                                </span>
+                                <span class="element">
+                                    Cl
+                                </span>
+                                <sup class="oxidation-number">
+                                    -I
+                                </sup>
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                            <span class="plus">
+                                -
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                            <span class="compound">
+                                <span class="coefficient">
+                                    2
+                                </span>
+                                <span class="space">
+                                    &nbsp;
+                                </span>
+                                <span class="electron">
+                                    e
+                                </span>
+                                <sup class="charge">
+                                    -
+                                </sup>
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                            <span class="arrow">
+                                →
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                            <span class="compound">
+                                <span class="coefficient">
+                                    2
+                                </span>
+                                <span class="space">
+                                    &nbsp;
+                                </span>
+                                <span class="element">
+                                    Cl
+                                </span>
+                                <sup class="oxidation-number">
+                                    0
+                                </sup>
+                            </span>
+                            <span class="space">
+                                 
+                            </span>
+                        </span>
+                        <span class="redox-comment">
+                            (oxidation)
+                        </span>
+                    </p>
+                    <div class="clear">
+
+                    </div>
+                </div>
+                <p>
+                    <em>
+                        <span class="group">
+                            <span class="element">
+                                Mn
+                            </span>
+                            <span class="element">
+                                O
+                            </span>
+                            <sub class="count">
+                                2
+                            </sub>
+                        </span>
+                    </em>
+                     is an <strong>oxidizing</strong> agent, 
+                     <em>
+                         <span class="group">
+                             <span class="element">
+                                 H
+                                </span>
+                                <span class="element">
+                                    Cl
+                                </span>
+                            </span>
+                        </em>
+                         is a <strong>reducing</strong> agent.
+                        </p>
+                </div>
+            </div>
+            <div class="explanation-block">
+            </div>
+        </div>-->
+        
+        
     </section>
     <!--section end-->
     <!--footer-->
