@@ -49,7 +49,8 @@ var colors = {
 
 }
 var videos = {
-
+    'hcl+mno2':'https://www.youtube.com/embed/ceEIBcYi6iE',
+    'hcl+naoh':'https://www.youtube.com/embed/rL3k8JJhci4',
 }
 //вывод результата searchParams в section-content
 content=document.getElementById('section-content');
@@ -127,20 +128,28 @@ if (searchParams in reactions){
         }
     }
     equation.append(equation_arg);
-    
+    content.append(equation);
+
     var explanation=document.createElement('div');
     explanation.className='explanation';
+
     var explanation_block=document.createElement('div');
     explanation_block.className='explanation-block';
     explanation_block.innerHTML=reactions[searchParams][1];
     explanation.append(explanation_block);
+
     var explanation_block=document.createElement('div');
     explanation_block.className='explanation-block';
     explanation_block.innerHTML=reactions[searchParams][2];
-    explanation.append(explanation_block);
-    
+    if (searchParams in videos){
+        var video=document.createElement('div');
+        video.className='explanation-video';
+        video.innerHTML=`<object data="${videos[searchParams]}">
+        </object>`
+        explanation_block.append(video);
+    }
 
-    content.append(equation);
+    explanation.append(explanation_block);
     content.append(explanation);
 } 
 //иначе сделать вывод alert-alert

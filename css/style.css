@@ -33,10 +33,11 @@ a {
     width:fit-content;
 }
 .link .picture img {
-    width:100px;
+    width:200px;
 }
 .link .name {
     font-size: 50px;
+    font-family: 'PT Sans', sans-serif;
 }
 .section-content {
     width:100%;
