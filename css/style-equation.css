@@ -188,12 +188,12 @@ form#form-equation {
 }
 .explanation-video {
     margin: 20px auto 20px auto;
-    width: 50vh;
-    height:30vh;
+    width: 500px;
+    height:300px;
 }
 .explanation-video object {
-    width: inherit;
-    height: inherit;
+    width:inherit;
+    height:inherit;
 }
 .group {
     font-family: 'PT Sans', sans-serif;
