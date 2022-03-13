@@ -8,7 +8,7 @@ if (link!=''){
 //установка генеральной ссылки сайта
 link=document.getElementById('link');
 link.href='.';
-
+console.log('брух');
 (async () => {
     var response = await fetch('https://chemequations.com/ru/');
     switch (response.status) {
