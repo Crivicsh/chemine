@@ -9,7 +9,7 @@ if (link!=''){
 link=document.getElementById('link');
 link.href='.';
 (async () => {
-    var response = await fetch('https://chemequations.com/ru/');
+    var response = await fetch('https://chemequations.com/ru/', {mode: 'no-cors'});
     switch (response.status) {
     // status "OK"
     case 200:
