@@ -13,7 +13,7 @@ link.href='.';
 
 
 (async () => {
-    var response = await fetch('https://temequations.com/ru/');
+    var response = await fetch('https://chemequations.com/ru/');
     switch (response.status) {
     // status "OK"
     case 200:
