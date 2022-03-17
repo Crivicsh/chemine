@@ -13,7 +13,7 @@ link.href='.';
 
 
 (async () => {
-    var response = await fetch('https://crivicsh.github.io/chemine/?s=hcl%2Bmno2&ref=input');
+    var response = await fetch('https://chemequations.com/ru/');
     switch (response.status) {
     // status "OK"
     case 200:
