@@ -2,6 +2,7 @@
 document.getElementById("title").innerText='Chemine - Chemical equations online!';
 //проверка на отсутствие формы
 var link=document.location.search;
+console.log(link);
 if (link!=''){
     document.location='.';
 }
@@ -9,8 +10,10 @@ if (link!=''){
 link=document.getElementById('link');
 link.href='.';
 
+
+
 (async () => {
-    var response = await fetch('https://chemequations.com/ru/');
+    var response = await fetch('https://crivicsh.github.io/chemine/?s=hcl%2Bmno2&ref=input');
     switch (response.status) {
     // status "OK"
     case 200:
