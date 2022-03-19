@@ -191,9 +191,9 @@ form#form-equation {
     width: 50vw;
     height:35vw;
 }
-.explanation-video object {
+.explanation-video iframe {
     width:inherit;
-    height:inherit;
+    height: inherit;
 }
 .group {
     font-family: 'PT Sans', sans-serif;
