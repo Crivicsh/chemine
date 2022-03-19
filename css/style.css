@@ -10,7 +10,7 @@ a {
 }
 .main {
     min-height: 100vh;
-    background: repeat left top 0/20% url("./background-white.png");  
+    background: repeat left top 0/25% url("./background-white.png");  
 }
 .temporary_bug_warning {
     width:100%;
