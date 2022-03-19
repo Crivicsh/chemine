@@ -120,8 +120,7 @@ if (searchParams in reactions){
     if (searchParams in videos){
         var video=document.createElement('div');
         video.className='explanation-video';
-        video.innerHTML=`<object data="${videos[searchParams]}">
-        </object>`
+        video.innerHTML=`<iframe width="560" height="315" src="${videos[searchParams]}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
         explanation_block.append(video);
     }
 
