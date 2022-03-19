@@ -188,8 +188,8 @@ form#form-equation {
 }
 .explanation-video {
     margin: 20px auto 20px auto;
-    width: 50vw;
-    height:35vw;
+    width: 40vw;
+    height:30vw;
 }
 .explanation-video iframe {
     width:inherit;
